@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-19T17:51:53 IST" name="Default suite" finished-at="2024-05-19T17:52:07 IST" duration-ms="14382">
+    <groups>
+    </groups>
+    <test started-at="2024-05-19T17:51:53 IST" name="Default test" finished-at="2024-05-19T17:52:07 IST" duration-ms="14382">
+      <class name="TestCases.LoginTestCase">
+        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:51:53 IST" name="ExtentReport" finished-at="2024-05-19T17:51:53 IST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method is-config="true" signature="FetchUrl()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:51:53 IST" name="FetchUrl" finished-at="2024-05-19T17:52:04 IST" duration-ms="11014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FetchUrl -->
+        <test-method signature="VerifyLoginEmptyData()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:52:04 IST" name="VerifyLoginEmptyData" finished-at="2024-05-19T17:52:07 IST" duration-ms="3341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginEmptyData -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:52:07 IST" name="endReport" finished-at="2024-05-19T17:52:08 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- TestCases.LoginTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
