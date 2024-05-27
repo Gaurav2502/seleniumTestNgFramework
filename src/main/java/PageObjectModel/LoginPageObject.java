@@ -5,7 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPageObject {
+
+	
 	public WebDriver driver;
+	// changes by user
 	
 	private By username=By.xpath("//input[@name='email']");
 	private By password=By.xpath("//input[@name='password']");
@@ -15,7 +18,7 @@ public class LoginPageObject {
 	
 	private By Succesfullogin=By.xpath("//h2[text()='My Account']");
 	
-	
+	//hekko
 	
 	public LoginPageObject(WebDriver driver) {
 		this.driver=driver;

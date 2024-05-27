@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases.LoginTestCase">
+      <class name="TestCases.ProductSelectTestcase">
         <methods>
-          <include name="VerifyLoginEmptyData"/>
           <include name="FetchUrl"/>
+          <include name="SelectingProduct"/>
           <include name="endReport"/>
           <include name="ExtentReport"/>
         </methods>
-      </class> <!-- TestCases.LoginTestCase -->
+      </class> <!-- TestCases.ProductSelectTestcase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,29 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="11" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-19T17:51:53 IST" name="Default suite" finished-at="2024-05-19T17:52:07 IST" duration-ms="14382">
+  <suite started-at="2024-05-22T12:02:08 IST" name="Suite" finished-at="2024-05-22T12:02:38 IST" duration-ms="30157">
     <groups>
     </groups>
-    <test started-at="2024-05-19T17:51:53 IST" name="Default test" finished-at="2024-05-19T17:52:07 IST" duration-ms="14382">
-      <class name="TestCases.LoginTestCase">
-        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:51:53 IST" name="ExtentReport" finished-at="2024-05-19T17:51:53 IST" duration-ms="278" status="PASS">
+    <test started-at="2024-05-22T12:02:08 IST" name="Test" finished-at="2024-05-22T12:02:38 IST" duration-ms="30157">
+      <class name="TestCases.RegisterTest">
+        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:TestCases.RegisterTest@79924b]" started-at="2024-05-22T12:02:08 IST" name="ExtentReport" finished-at="2024-05-22T12:02:08 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReport -->
-        <test-method is-config="true" signature="FetchUrl()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:51:53 IST" name="FetchUrl" finished-at="2024-05-19T17:52:04 IST" duration-ms="11014" status="PASS">
+        <test-method is-config="true" signature="FetchUrl()[pri:0, instance:TestCases.RegisterTest@79924b]" started-at="2024-05-22T12:02:08 IST" name="FetchUrl" finished-at="2024-05-22T12:02:18 IST" duration-ms="9587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FetchUrl -->
-        <test-method signature="VerifyLoginEmptyData()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:52:04 IST" name="VerifyLoginEmptyData" finished-at="2024-05-19T17:52:07 IST" duration-ms="3341" status="PASS">
+        <test-method signature="VerifyRegsiterValidData()[pri:0, instance:TestCases.RegisterTest@79924b]" started-at="2024-05-22T12:02:18 IST" name="VerifyRegsiterValidData" finished-at="2024-05-22T12:02:21 IST" duration-ms="2966" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLoginEmptyData -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases.LoginTestCase@3e58a80e]" started-at="2024-05-19T17:52:07 IST" name="endReport" finished-at="2024-05-19T17:52:08 IST" duration-ms="299" status="PASS">
+        </test-method> <!-- VerifyRegsiterValidData -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases.RegisterTest@79924b]" started-at="2024-05-22T12:02:39 IST" name="endReport" finished-at="2024-05-22T12:02:39 IST" duration-ms="753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
+      </class> <!-- TestCases.RegisterTest -->
+      <class name="TestCases.ProductSelectTestcase">
+        <test-method is-config="true" signature="FetchUrl()[pri:0, instance:TestCases.ProductSelectTestcase@59309333]" started-at="2024-05-22T12:02:31 IST" name="FetchUrl" finished-at="2024-05-22T12:02:38 IST" duration-ms="6766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FetchUrl -->
+        <test-method signature="SelectingProduct()[pri:0, instance:TestCases.ProductSelectTestcase@59309333]" started-at="2024-05-22T12:02:38 IST" name="SelectingProduct" finished-at="2024-05-22T12:02:38 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at PageObjectModel.ProductPageObject.clickOnComponents(ProductPageObject.java:13)
+at TestCases.ProductSelectTestcase.SelectingProduct(ProductSelectTestcase.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectingProduct -->
+      </class> <!-- TestCases.ProductSelectTestcase -->
+      <class name="TestCases.LoginTestCase">
+        <test-method is-config="true" signature="FetchUrl()[pri:0, instance:TestCases.LoginTestCase@1aa7ecca]" started-at="2024-05-22T12:02:21 IST" name="FetchUrl" finished-at="2024-05-22T12:02:29 IST" duration-ms="8281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FetchUrl -->
+        <test-method signature="VerifyLoginValidData()[pri:0, instance:TestCases.LoginTestCase@1aa7ecca]" started-at="2024-05-22T12:02:29 IST" name="VerifyLoginValidData" finished-at="2024-05-22T12:02:31 IST" duration-ms="2281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginValidData -->
       </class> <!-- TestCases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

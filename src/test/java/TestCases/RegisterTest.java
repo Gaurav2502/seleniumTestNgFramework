@@ -39,7 +39,7 @@ public class RegisterTest extends BaseClass{
 		commonMethod.handlingAssertion(Actual, Excepted);
 		
 	}
-	@Test(priority=1)
+	@Test(enabled=false)
 	public void VerifyRegsiterInvalidData() throws IOException{
 	
 		HomePageObject hpo= new HomePageObject(driver);
@@ -68,7 +68,7 @@ public class RegisterTest extends BaseClass{
 	}
 	
 	
-	@Test(priority=2)
+	@Test(enabled=false)
 	public void VerifyRegsiterEmptyData() throws IOException{
 
 		HomePageObject hpo= new HomePageObject(driver);

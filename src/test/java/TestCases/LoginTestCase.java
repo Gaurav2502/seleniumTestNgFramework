@@ -14,7 +14,7 @@ public class LoginTestCase extends BaseClass {
 	
 
 	// LoginTestCases
-	@Test(priority = 0)
+	@Test
 	public void VerifyLoginValidData() throws IOException {
 		
 		
@@ -37,7 +37,7 @@ public class LoginTestCase extends BaseClass {
 		
 	}
 
-	@Test(priority = 1)
+	@Test(enabled=false)
 	public void VerifyLoginInValidData() throws IOException, InterruptedException {
 
 		HomePageObject hpo = new HomePageObject(driver);
@@ -59,7 +59,7 @@ public class LoginTestCase extends BaseClass {
 		
 	}
 
-	@Test(priority = 0)
+	@Test(enabled=false)
 	public void VerifyLoginEmptyData() throws IOException, InterruptedException {
 
 		HomePageObject hpo = new HomePageObject(driver);

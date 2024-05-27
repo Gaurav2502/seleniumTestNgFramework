@@ -40,10 +40,6 @@ public class RegisterPageObjcet {
 		this.driver=driver;
 	}
 	
-	
-	
-	
-
 	//getter method from encapsulation
 	public WebElement TypeFirstName() {
 		return driver.findElement(firstname);
