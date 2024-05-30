@@ -1,10 +1,10 @@
 package TestCases;
 
-
 import org.testng.annotations.Test;
 
 import PageObjectModel.AddToCartPageObject;
 import resources.BaseClass;
+import resources.commonMethod;
 
 public class AddToCart extends BaseClass {
 	@Test
@@ -14,13 +14,10 @@ public class AddToCart extends BaseClass {
 		apo.SearchBox().sendKeys("iphone");
 		apo.Searchbtn().click();
 		Thread.sleep(2000);
+
 		String IphoneFullCost = apo.iphoneCost().getText();
-		String iArray[] = IphoneFullCost.split(" ");
-		
-		String iFinalValue = iArray[0].replaceAll("[^\\d.]", "");
-		System.out.println(iFinalValue);
-		double cost1 = Double.parseDouble(iFinalValue);
-		
+		commonMethod.findingValue(IphoneFullCost);
+
 		apo.ClickOnAddToCart().click();
 
 		apo.SearchBox().clear();
@@ -28,31 +25,25 @@ public class AddToCart extends BaseClass {
 		apo.Searchbtn().click();
 
 		String SamsungFullCost = apo.sCost().getText();
-		String sArray[] = SamsungFullCost.split(" ");
-		String SfinalValue = sArray[0].replaceAll("[^\\d.]", "");
-		System.out.println(SfinalValue);
+		commonMethod.findingValue(SamsungFullCost);
 
-		double cost2 = Double.parseDouble(SfinalValue);
 		apo.ClickOnSAddToCart().click();
 
-	// ---------------------addition--------------------------
-		double CalculateCost = cost1 + cost2;
+	// ---------------------------------------addition----------------------------------------------------------------
+		double CalculateCost = commonMethod.findingValue(IphoneFullCost) + commonMethod.findingValue(SamsungFullCost);
 		System.out.println("my total:- " + CalculateCost);
-	// -------------------------------------------------------
-		
+	// ---------------------------------------------------------------------------------------------------------------
+
 		Thread.sleep(2000);
 		apo.ClickOnCartItems().click();
 
 		String CartTotal = apo.ItemsTotal().getText();
-		String GenratedTotal = CartTotal.replaceAll("[^\\d.]", "");
-		System.out.println("Genrated total:- " + GenratedTotal);
-		double FinalTotal = Double.parseDouble(GenratedTotal);
+		commonMethod.findingValue(CartTotal);
 
-		if (FinalTotal == CalculateCost) {
+		if (commonMethod.findingValue(CartTotal) == CalculateCost) {
 			System.out.println("Totol was same");
 		} else {
 			System.out.println("Total was not same");
 		}
-
 	}
 }

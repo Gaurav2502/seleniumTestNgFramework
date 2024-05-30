@@ -21,4 +21,15 @@ public class commonMethod {
 		  wait.until(ExpectedConditions.visibilityOf(element));
 
 	}
+	
+	public static double findingValue(String SendValue) {
+		String Array[] = SendValue.split(" ");
+		String FinalValue = Array[0].replaceAll("[^\\d.]", "");
+		double cost = Double.parseDouble(FinalValue);
+		
+		return cost;
+//		System.out.println(cost);
+	}
+	
+
 }
